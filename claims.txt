@@ -1,0 +1,78 @@
+/***************************
+TITLE: Claims																																
+AUTHOR:	SRIPATI SURYA TEJA
+ROLL NO:	2201CS71
+Declaration of Authorship
+This txt file, claims.txt, is part of the miniproject of CS210 at the 
+Department of Computer Science and Engineering, IIT Patna. 
+***************************/
+
+Files:
+==========
+*All the files I submitted, asm.cpp and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+I uploaded the outputs of three testcases as proofs for working of my assembler. They are max(3 output files), adding(3 output files) and errorhandling(3 output files) . Test cases are tested and they are working well.
+
+*Both of my C++ programs did not show any errors or warnings when I compiled them with g++ -pedantic and g++ -pedantic -W -Wall -Wpointer-arith -Wwrite-strings standard.
+
+*The program is compilable with g++ assembler.cpp -o asm.
+
+
+=============================
+Program format and structure:
+=============================
+1. The assembler:
+
+	EXECUTION FORMAT: ./asm.exe filename.asm
+
+    1.It has two containers to store labels and a mnemonic table with expected operands, respectively.
+    2.  detects label errors.
+    3. Correct formatting with sensible program structure. 
+  
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested three examples shown below. The errors only occurred in the file errorhandling.asm and 
+the program immediately stopped on the second pass. 
+
+The others were tested without any errors detected and produced three output files, a listing file, 
+error log file and machine-readable object file for each example. 
+
+1)
+#Input: asm max.asm
+#Output: 
+a. max.l 
+b. max.log (without any error messages)
+c. max.o
+
+2)
+#Input:asm errorhandling.asm
+#Output: 
+a. errorhandling.l 
+b.  errorhandling.log (without error messages shown as below but also in the log file)
+c.  errorhandling.o
+
+Error messages:
+Line: 4 Duplicate label definition: label
+Line: 5 No such label: nonesuch
+Line: 6 Invalid expression: 08ge
+Line: 7 Invalid expression: 
+Line: 7 Missing operand: ldc
+Line: 8 Unexpected operand: add 5
+Line: 9 Invalid expression: 5, 6
+Line: 10 Bogus labelname: 0def
+Line: 11 Bogus Mnemonic: fibble
+Line: 12 Bogus Mnemonic: 0def
+
+
+3)
+#Input:asm adding.asm
+#Output: 
+a. adding.l 
+b. adding.log (without any error messages)
+c. adding.o
+

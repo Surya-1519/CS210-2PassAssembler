@@ -1,0 +1,10 @@
+Line: 4 Duplicate label definition: label
+Line: 5 No such label: nonesuch
+Line: 6 Invalid expression: 08ge
+Line: 7 Invalid expression: 
+Line: 7 Missing operand: ldc
+Line: 8 Unexpected operand: add 5
+Line: 9 Invalid expression: 5, 6
+Line: 10 Bogus labelname: 0def
+Line: 11 Bogus Mnemonic: fibble
+Line: 12 Bogus Mnemonic: 0def
